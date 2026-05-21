@@ -1,0 +1,309 @@
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+}
+
+/* ================= NAVBAR ================= */
+
+#home {
+  background: linear-gradient(90deg, #7600bc, #9b27ff);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.profile_name {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.profile_name .contact_info {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.contact_info img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.contact_info a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact_info a:hover {
+  text-decoration: underline;
+}
+
+.topdiv {
+  display: flex;
+  gap: 15px;
+}
+
+.topmenu {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.topmenu:hover {
+  background-color: white;
+  color: #7600bc;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* ================= HEADINGS ================= */
+
+h2 {
+  text-align: center;
+  font-size: 42px;
+  color: #7600bc;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/* ================= ABOUT ME ================= */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+}
+
+.profile_image {
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#about-me h1 {
+  font-size: 55px;
+  color: #7600bc;
+  margin-bottom: 20px;
+}
+
+#about-me p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+/* ================= SKILLS ================= */
+
+.all_skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.skill {
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px;
+  width: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+}
+
+.skill img {
+  height: 60px;
+}
+
+.skill h6 {
+  font-size: 22px;
+  margin: 15px 0 10px;
+}
+
+.skill p {
+  color: gray;
+  font-size: 16px;
+}
+
+/* ================= PROJECTS ================= */
+
+.projects-container {
+  padding: 20px 10%;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card h3 {
+  color: #7600bc;
+  font-size: 28px;
+}
+
+.project-card li {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ================= RECOMMENDATIONS ================= */
+
+.all_recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.recommendation {
+  background-color: white;
+  width: 320px;
+  border-radius: 15px;
+  padding: 25px;
+  font-style: italic;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-left: 5px solid #7600bc;
+  transition: 0.3s;
+}
+
+.recommendation:hover {
+  transform: translateY(-5px);
+}
+
+.recommendation span {
+  color: #7600bc;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ================= FORM ================= */
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  width: 60%;
+  border: none;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.introduction {
+  font-size: 30px;
+  color: #7600bc;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+/* ================= BUTTON ================= */
+
+button {
+  background-color: #7600bc;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #5c0094;
+  transform: scale(1.05);
+}
+
+/* ================= HOME ICON ================= */
+
+.iconbutton {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #7600bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ================= POPUP ================= */
+
+.popup {
+  width: 350px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  visibility: hidden;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+}
+
+.popup img {
+  width: 80px;
+}
+
+.popup h3 {
+  color: #7600bc;
+  margin-top: 20px;
+}
