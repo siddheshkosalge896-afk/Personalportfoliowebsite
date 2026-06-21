@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Siddhesh Kosalge - Web Developer Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Siddhesh Kosalge is a web development student and aspiring software developer specializing in HTML, CSS, JavaScript, React and Node.js. Explore my projects, skills and certifications.">
+  <meta name="keywords" content="Siddhesh Kosalge, web developer, portfolio, HTML, CSS, JavaScript, React, frontend developer">
+  <meta name="author" content="Siddhesh Kosalge">
+  <link rel="canonical" href="https://siddheshkosalge.dev/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://siddheshkosalge.dev/">
+  <meta property="og:title" content="Siddhesh Kosalge - Web Developer Portfolio">
+  <meta property="og:description" content="Web development student and aspiring software developer. Explore my projects, skills and certifications.">
+  <meta property="og:image" content="https://siddheshkosalge.dev/images/og-preview.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Siddhesh Kosalge - Web Developer Portfolio">
+  <meta name="twitter:description" content="Web development student and aspiring software developer. Explore my projects, skills and certifications.">
+  <meta name="twitter:image" content="https://siddheshkosalge.dev/images/og-preview.png">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll_progress_wrap">
+    <div class="scroll_progress_bar" id="scroll_progress_bar"></div>
+  </div>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader_spinner"></div>
+    <p class="loader_text">Loading portfolio...</p>
+  </div>
+
+
+  <!-- Navigation Bar -->
+  <nav>
+
+    <div id="home">
+
+      <div class="profile_name">
+
+        Siddhesh Kosalge
+
+        <!-- Email -->
+        <div class="contact_info">
+          <img src="images/envelope.png" alt="email" />
+          <a href="mailto:siddheshkosalge896@gmail.com">siddheshkosalge896@gmail.com</a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact_info">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="linkedin" width="20" />
+          <a href="https://www.linkedin.com/in/siddheshkosalge" target="_blank">linkedin.com/in/siddheshkosalge</a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact_info">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="github" width="20" />
+          <a href=" https://github.com/siddheshkosalge896-afk" target="_blank"><github class="com">github.com/siddheshkosalge896-afk</a>
+        </div>
+
+        <!-- Visitor Counter -->
+        <div class="contact_info">
+          <span id="visitor_count" class="visitor_badge">👁 Loading visits...</span>
+        </div>
+
+      </div>
+
+      <!-- Menu -->
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#education">Education</a>
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#certifications">Certifications</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#github-stats">GitHub</a>
+        <a class="topmenu" href="#recommendations">Recommendations</a>
+        <a class="topmenu" href="#contact">Contact</a>
+
+        <!-- Dark mode toggle -->
+        <button id="theme_toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span id="theme_icon">🌙</span>
+        </button>
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+
+    <canvas id="hero_particles" class="hero_particles"></canvas>
+
+    <div class="about_image_wrap">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="profile_image" alt="profile" />
+    </div>
+
+    <div class="about_text">
+
+      <h1>
+        Hi, I'm Siddhesh Kosalge
+        <img src="images/waving-hand.png" width="50px" alt="wave" />
+      </h1>
+
+      <h2 class="typing_role"><span id="typed_text"></span><span class="cursor">|</span></h2>
+
+      <p>
+        I am a passionate web development student and aspiring software developer.
+        I enjoy creating responsive websites using HTML, CSS and JavaScript.
+        I have worked on projects like portfolio websites, shopping websites and
+        chatbot applications. I am always eager to learn new technologies and improve
+        my development skills.
+      </p>
+
+      <div class="about_buttons">
+        <a href="resume.pdf" download class="btn_primary">⬇ Download Resume</a>
+        <button type="button" id="print_resume_btn" class="btn_secondary no-print">🖨 Print-Friendly View</button>
+        <a href="#contact" class="btn_secondary">Get In Touch</a>
+      </div>
+
+      <!-- Social Share -->
+      <div class="social_share no-print">
+        <span class="social_share_label">Share my portfolio:</span>
+        <button type="button" class="share_btn" data-platform="linkedin" aria-label="Share on LinkedIn">in</button>
+        <button type="button" class="share_btn" data-platform="twitter" aria-label="Share on X/Twitter">𝕏</button>
+        <button type="button" class="share_btn" data-platform="whatsapp" aria-label="Share on WhatsApp">☎</button>
+        <button type="button" class="share_btn" data-platform="copy" aria-label="Copy link">🔗</button>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats_row">
+        <div class="stat_box">
+          <h3 data-count="5">0</h3>
+          <p>Projects</p>
+        </div>
+        <div class="stat_box">
+          <h3 data-count="5">0</h3>
+          <p>Tech Skills</p>
+        </div>
+        <div class="stat_box">
+          <h3 data-count="1">0</h3>
+          <p>Year Learning</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Education -->
+  <section id="education">
+
+    <h2>Education</h2>
+    <div style="clear:both;"></div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2026 - 2029</span>
+          <h3>Bachelor of Engineering — Computer Engineering</h3>
+          <h4>P.E.S. Modern College of Engineering, Pune</h4>
+          <p>
+            Studied core subjects in computer science including data structures,
+            algorithms, web development, and database management. Built multiple
+            academic and personal projects alongside coursework.
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2019 - 2021</span>
+          <h3>Higher Secondary Education (12th)</h3>
+          <h4>Your School Name Here, City</h4>
+          <p>
+            Completed higher secondary education with a focus on Science and Mathematics,
+            building the foundation for an engineering career.
+          </p>
+        </div>
+      </div>
+
+    </div>-->
+
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills">
+
+    <h2>Skills</h2>
+    <div style="clear:both;"></div>
+
+    <div class="skills_view_toggle no-print" role="group" aria-label="Switch skills view">
+      <button type="button" class="skills_view_btn active" data-view="cards" id="skills_view_cards">Cards</button>
+      <button type="button" class="skills_view_btn" data-view="radar" id="skills_view_radar">Radar Chart</button>
+    </div>
+
+    <div class="all_skills" id="skills_cards_view">
+
+      <div class="skill skill_animated">
+        <div class="skill_icon_wrap"><img src="images/html5.png" alt="HTML" /></div>
+        <h6>HTML</h6>
+        <div class="skill_bar"><div class="skill_fill" style="width:90%;"></div></div>
+      </div>
+
+      <div class="skill skill_animated">
+        <div class="skill_icon_wrap"><img src="images/CSS3.png" alt="CSS" /></div>
+        <h6>CSS</h6>
+        <div class="skill_bar"><div class="skill_fill" style="width:85%;"></div></div>
+      </div>
+
+      <div class="skill skill_animated">
+        <div class="skill_icon_wrap"><img src="images/js.jpeg" alt="JavaScript" /></div>
+        <h6>JavaScript</h6>
+        <div class="skill_bar"><div class="skill_fill" style="width:80%;"></div></div>
+      </div>
+
+      <div class="skill skill_animated">
+        <div class="skill_icon_wrap"><img src="images/java.png" alt="Java" /></div>
+        <h6>Java</h6>
+        <div class="skill_bar"><div class="skill_fill" style="width:75%;"></div></div>
+      </div>
+
+      <div class="skill skill_animated">
+        <div class="skill_icon_wrap"><img src="images/react.png" alt="React" /></div>
+        <h6>React</h6>
+        <div class="skill_bar"><div class="skill_fill" style="width:65%;"></div></div>
+      </div>
+
+      <div class="skill skill_animated">
+        <div class="skill_icon_wrap"><img src="images/node.png" alt="Node.js" /></div>
+        <h6>Node.js</h6>
+        <div class="skill_bar"><div class="skill_fill" style="width:60%;"></div></div>
+      </div>
+
+    </div>
+
+    <div class="radar_view" id="skills_radar_view">
+      <canvas id="skills_radar_canvas" width="520" height="520"></canvas>
+    </div>
+
+  </section>
+
+
+
+  <!-- Certifications -->
+  <section id="certifications">
+
+    <h2>Certifications</h2>
+    <div style="clear:both;"></div>
+
+    <div class="all_certifications" id="all_certifications">
+
+      <div class="certification_card tilt_card">
+        <div class="cert_icon">🏆</div>
+        <h3>Introduction to HTML, CSS, &amp; JavaScript</h3>
+        <p class="cert_issuer">IBM via Coursera • Apr 2026</p>
+        <p class="cert_desc">Foundational front-end course covering semantic HTML, CSS styling and layout, and core JavaScript programming concepts, authorized by IBM.</p>
+        <div class="cert_actions">
+          <a href="Certifications/HTML,CSS AND JAVA SCRIPT.pdf" target="_blank" class="cert_link">View Certificate →</a>
+          <a href="Certifications/HTML,CSS AND JAVA SCRIPT.pdf" target="_blank" class="cert_verify">Verify ✓</a>
+        </div>
+      </div>
+
+      <div class="certification_card tilt_card">
+        <div class="cert_icon">🏆</div>
+        <h3>Crash Course on Python</h3>
+        <p class="cert_issuer">Google via Coursera • May 2026</p>
+        <p class="cert_desc">Beginner-level course covering Python syntax, data structures, and basic object-oriented programming, part of Google's IT Automation series.</p>
+        <div class="cert_actions">
+          <a href="Certifications/Crash Course on Python.pdf" target="_blank" class="cert_link">View Certificate →</a>
+          <a href="Certifications/Crash Course on Python.pdf" target="_blank" class="cert_verify">Verify ✓</a>
+        </div>
+      </div>
+
+      <div class="certification_card tilt_card">
+        <div class="cert_icon">🏆</div>
+        <h3>Build Your Portfolio Website with HTML and CSS</h3>
+        <p class="cert_issuer">Coursera Project Network • May 2026</p>
+        <p class="cert_desc">Hands-on guided project covering structuring web content and designing responsive layouts — the foundation this very portfolio is built on.</p>
+        <div class="cert_actions">
+          <a href="Certifications/Build Your Portfolio Website with HTML and CSS.pdf" target="_blank" class="cert_link">View Certificate →</a>
+          <a href="Certifications/Build Your Portfolio Website with HTML and CSS.pdf" target="_blank" class="cert_verify">Verify ✓</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+
+    <h2>Projects</h2>
+    <div style="clear:both;"></div>
+
+    <!-- Filter Bar -->
+    <div class="filter_bar" id="filter_bar" role="group" aria-label="Filter projects by technology">
+      <button type="button" class="filter_chip active" data-filter="all">All Projects</button>
+      <button type="button" class="filter_chip" data-filter="html">HTML</button>
+      <button type="button" class="filter_chip" data-filter="css">CSS</button>
+      <button type="button" class="filter_chip" data-filter="js">JS</button>
+    </div>
+
+    <p class="filter_empty_state" id="filter_empty_state">No projects match this filter yet.</p>
+
+    <div id="projects-container" class="projects-container">
+
+      <div class="project-card tilt_card" data-tags="html css js">
+        <div class="project-card-body">
+          <div class="project-thumb" data-lightbox-trigger data-caption="Portfolio Website">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&q=80" alt="Portfolio Website preview" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <div class="project-card-header">
+              <h3>Portfolio Website</h3>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Developed a personal portfolio website using HTML, CSS and JavaScript
+                to showcase my projects, skills and achievements.
+              </li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank">Live Demo ↗</a>
+              <a href="https://github.com/siddheshkosalge896-afk" target="_blank">Source Code ↗</a>
+              <button class="case-study-toggle" type="button">View Case Study ▾</button>
+            </div>
+
+            <div class="case-study">
+              <div class="case-study-block">
+                <h4>🎯 Problem</h4>
+                <p>Needed a single, professional place to showcase skills and projects to recruiters, since scattered links across LinkedIn and GitHub weren't making a strong first impression.</p>
+              </div>
+              <div class="case-study-block">
+                <h4>🛠 Solution</h4>
+                <p>Built a fully responsive single-page site from scratch using semantic HTML, custom CSS (flexbox-based layouts, CSS variables for theming), and vanilla JavaScript for interactivity — including a dark mode toggle and dynamic recommendation form.</p>
+              </div>
+              <div class="case-study-block">
+                <h4>📈 Result</h4>
+                <p>Created a maintainable, fast-loading portfolio with zero dependencies that can be deployed instantly to any static host and easily extended with new sections.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card tilt_card" data-tags="html css js">
+        <div class="project-card-body">
+          <div class="project-thumb" data-lightbox-trigger data-caption="Travel Recommendation Website">
+            <img src="images/p1.jpeg" alt="Travel Recommendation Website" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <div class="project-card-header">
+              <h3>Travel Recommendation Website</h3>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Travel recommendation website built using HTML, CSS and JavaScript. 
+              </li>
+            </ul>
+            <div class="project-links">
+              <a href="https://siddheshkosalge896-afk.github.io/Travel-Recommendation-Website/" target="_blank">Live Demo ↗</a>
+              <a href="https://github.com/siddheshkosalge896-afk" target="_blank">Source Code ↗</a>
+              <button class="case-study-toggle" type="button">View Case Study ▾</button>
+            </div>
+
+            <div class="case-study">
+              <div class="case-study-block">
+                <h4>🎯 Problem</h4>
+                <p>Travelers need a quick and easy way to discover destinations without searching multiple websites.</p>
+              </div>
+              <div class="case-study-block">
+                <h4>🛠 Solution</h4>
+                <p>Built a responsive Travel Recommendation Website using HTML, CSS, JavaScript, and JSON data with search and recommendation features.</p>
+              </div>
+              <div class="case-study-block">
+                <h4>📈 Result</h4>
+                <p>Delivered an interactive travel platform showcasing front-end development, dynamic content handling, and responsive design skills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <div style="clear:both;"></div>
+
+
+  <!-- Tech Stack Marquee -->
+  <section id="tech-stack">
+
+    <h2>Tech Stack</h2>
+    <div style="clear:both;"></div>
+
+    <div class="marquee_wrap">
+      <div class="marquee_track">
+        <span class="marquee_item">HTML5</span>
+        <span class="marquee_item">CSS3</span>
+        <span class="marquee_item">JavaScript</span>
+        <span class="marquee_item">React</span>
+        <span class="marquee_item">Node.js</span>
+        <span class="marquee_item">Java</span>
+        <span class="marquee_item">Git</span>
+        <span class="marquee_item">VS Code</span>
+        <span class="marquee_item">Responsive Design</span>
+        <span class="marquee_item">HTML5</span>
+        <span class="marquee_item">CSS3</span>
+        <span class="marquee_item">JavaScript</span>
+        <span class="marquee_item">React</span>
+        <span class="marquee_item">Node.js</span>
+        <span class="marquee_item">Java</span>
+        <span class="marquee_item">Git</span>
+        <span class="marquee_item">VS Code</span>
+        <span class="marquee_item">Responsive Design</span>
+      </div>
+    </div>
+
+  </section>
+
+
+  <div style="clear:both;"></div>
+
+
+  <!-- GitHub Stats -->
+  <section id="github-stats">
+
+    <h2>GitHub Activity</h2>
+    <div style="clear:both;"></div>
+
+    <div class="github_card" id="github_card">
+
+      <div class="github_card_header">
+        <img src="https://github.com/favicon.ico" alt="" class="github_logo" width="28" />
+        <a href="https://github.com/siddheshkosalge896-afk" target="_blank" class="github_username">@siddheshkosalge896-afk</a>
+      </div>
+
+      <div class="github_stats_grid" id="github_stats_grid">
+        <div class="github_stat_box">
+          <h3 id="gh_repos">—</h3>
+          <p>Public Repos</p>
+        </div>
+        <div class="github_stat_box">
+          <h3 id="gh_followers">—</h3>
+          <p>Followers</p>
+        </div>
+        <div class="github_stat_box">
+          <h3 id="gh_following">—</h3>
+          <p>Following</p>
+        </div>
+        <div class="github_stat_box">
+          <h3 id="gh_gists">—</h3>
+          <p>Gists</p>
+        </div>
+      </div>
+
+      <p class="github_status" id="github_status">Loading live GitHub data…</p>
+
+      <div class="github_repos_list" id="github_repos_list"></div>
+
+      <a href="https://github.com/siddheshkosalge896-afk" target="_blank" class="btn_secondary github_visit_btn">View Full Profile ↗</a>
+
+    </div>
+
+  </section>
+
+
+  <div style="clear:both;"></div>
+
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+
+    <div class="carousel_wrap">
+
+      <button class="carousel_arrow carousel_prev" id="carousel_prev" aria-label="Previous">‹</button>
+
+      <div class="carousel_track_wrap">
+        <div class="carousel_track" id="all_recommendations">
+
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Siddhesh is a hardworking and creative developer who always completes
+            projects on time. His dedication and technical skills make him a great team player.
+            <span>&#8221;</span>
+          </div>
+
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Working with Siddhesh was an amazing experience. He quickly learns new
+            technologies and delivers high-quality work with excellent problem-solving skills.
+            <span>&#8221;</span>
+          </div>
+
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Siddhesh has strong web development knowledge and a positive attitude.
+            He is always ready to help others and contribute innovative ideas.
+            <span>&#8221;</span>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="carousel_arrow carousel_next" id="carousel_next" aria-label="Next">›</button>
+
+    </div>
+
+    <div class="carousel_dots" id="carousel_dots"></div>
+
+  </section>
+
+
+  <!-- Contact / Recommendation Form -->
+  <section id="contact">
+
+    <h2>Get In Touch</h2>
+    <div style="clear:both;"></div>
+
+    <!-- Availability Status -->
+    <div class="availability_badge">
+      <span class="availability_dot"></span>
+      Open to internships, freelance work &amp; collaboration
+    </div>
+
+    <!-- Quick Connect -->
+    <div class="quick_connect">
+
+      <a href="https://wa.me/9100000000?text=Hi%20Siddhesh%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!"
+         target="_blank" class="quick_connect_card whatsapp_card">
+        <span class="quick_connect_icon">💬</span>
+        <span class="quick_connect_text">
+          <strong>Chat on WhatsApp</strong>
+          <small>Usually replies within a day</small>
+        </span>
+      </a>
+
+      <a href="https://calendly.com/your-username/30min"
+         target="_blank" class="quick_connect_card calendly_card">
+        <span class="quick_connect_icon">📅</span>
+        <span class="quick_connect_text">
+          <strong>Book a Call</strong>
+          <small>Pick a time that works for you</small>
+        </span>
+      </a>
+
+    </div>
+
+    <div class="contact_grid">
+
+      <!-- Contact Form (mailto + floating labels + live validation) -->
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Send Me a Message</legend>
+
+          <form id="contact_form" novalidate>
+
+            <div class="form_field">
+              <input type="text" id="cf_name" name="name" placeholder=" " required minlength="2">
+              <label for="cf_name">Your Name</label>
+              <span class="field_error" id="err_name"></span>
+            </div>
+
+            <div class="form_field">
+              <input type="email" id="cf_email" name="email" placeholder=" " required>
+              <label for="cf_email">Your Email</label>
+              <span class="field_error" id="err_email"></span>
+            </div>
+
+            <div class="form_field">
+              <textarea id="cf_message" name="message" placeholder=" " rows="6" required minlength="10"></textarea>
+              <label for="cf_message">Your Message</label>
+              <span class="field_error" id="err_message"></span>
+            </div>
+
+            <div class="flex_center">
+              <button type="submit" id="contact_btn">📧 Send via Email</button>
+            </div>
+          </form>
+
+          <p class="form_note">* Clicking send opens your default email app with this message pre-filled, addressed to me directly.</p>
+        </fieldset>
+      </div>
+
+      <!-- Recommendation Form -->
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+
+          <input type="text" id="rec_name" placeholder="Name (Optional)"> <br />
+
+          <textarea id="new_recommendation" cols="500" rows="6" placeholder="Message"></textarea>
+
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Home Icon -->
+  <div class="iconbutton">
+    <a href="#home" aria-label="Back to top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="35px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12L12 3l9.75 9M4.5 10.5V21h15V10.5" />
+      </svg>
+    </a>
+  </div>
+
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <img src="images/checkmark--outline.svg" alt="success" />
+    <h3 id="popup_text">Thank you for leaving a recommendation!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+
+  <!-- Toast for contact form -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Image Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox_close" id="lightbox_close" aria-label="Close">×</button>
+    <img src="" alt="" id="lightbox_img" />
+    <p class="lightbox_caption" id="lightbox_caption"></p>
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
